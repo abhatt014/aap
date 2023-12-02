@@ -1,0 +1,6 @@
+---
+- name: ping machines
+  hosts: "{{nodes}}"
+  tasks:
+    - name: use ping mod
+      ping:
