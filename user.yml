@@ -1,0 +1,12 @@
+---
+- name: create user aap1
+  hosts: "{{nodes}}"
+  tasks:
+    - name: user user mod
+      user:
+        name: aap1
+        state: present
+      register: out
+    - name: print
+      debug:
+        var: out
