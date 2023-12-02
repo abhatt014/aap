@@ -1,6 +1,7 @@
 ---
 - name: create user aap1
   hosts: "{{nodes}}"
+  become: true
   tasks:
     - name: user user mod
       user:
