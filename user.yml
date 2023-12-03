@@ -5,7 +5,7 @@
   tasks:
     - name: user user mod
       user:
-        name: aap1
+        name: "{{username}}"
         state: present
       register: out
     - name: print
